@@ -11,6 +11,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['prefix' => 'authors'], function () use ($router) {
+    $router->get('/', 'AuthorController@index');
+    $router->post('/', 'AuthorController@store');
+    $router->get('/{author}', 'AuthorController@show');
+    $router->put('/{author}', 'AuthorController@update');
+    $router->patch('/{author}', 'AuthorController@update');
+    $router->delete('/{author}', 'AuthorController@destroy');
 });
