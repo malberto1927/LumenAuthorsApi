@@ -19,7 +19,7 @@ trait ApiResponser
 
     /**
      * Build error responses
-     * @param string $message
+     * @param string|array $message
      * @param int $code
      * @return \Illuminate\Http\JsonResponse
      */
