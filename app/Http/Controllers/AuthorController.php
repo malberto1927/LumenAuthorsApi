@@ -23,6 +23,7 @@ class AuthorController extends Controller
 
     /**
      * Return author list
+     *
      * @return \Illuminate\Http\JsonResponse
      */
     public function index()
@@ -34,6 +35,7 @@ class AuthorController extends Controller
 
     /**
      * Create an instance of Author
+     *
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      * @throws \Illuminate\Validation\ValidationException
@@ -55,6 +57,7 @@ class AuthorController extends Controller
 
     /**
      * Return an specific author
+     *
      * @param $author
      * @return \Illuminate\Http\JsonResponse
      */
@@ -67,6 +70,7 @@ class AuthorController extends Controller
 
     /**
      * Update the information of an existing author
+     *
      * @param Request $request
      * @param $author
      * @return \Illuminate\Http\JsonResponse
@@ -98,6 +102,7 @@ class AuthorController extends Controller
 
     /**
      * Removes an existing author
+     *
      * @param $author
      * @return \Illuminate\Http\JsonResponse
      */
